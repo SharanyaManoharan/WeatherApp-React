@@ -10,14 +10,15 @@ import ErrorMessage from "../ErrorMessage/error";
 
 const SearchWeather = () => {
 
-
+    
     const [city, setCity] = useState('');
     const [error, setError] = useState('');
     const [currentWeather, setCurrentWeather] = useState(null);
     const [forecastWeather, setForecastWeather] = useState(null);
 
-    let errorMessage;
 
+    let errorMessage;
+   
 
     async function displayDailyWeather() {
 
@@ -86,12 +87,9 @@ const SearchWeather = () => {
                             Weekly</button>
                     </div>
                 </div>
-            </div>
-
-          
-         
+            </div>  
             {city && currentWeather && <CurrentWeather daily={currentWeather} />}
-            {city && forecastWeather && <ForecastWeather weekly={forecastWeather} />}
+            {city && forecastWeather?.list?.length > 0 && <ForecastWeather weekly={forecastWeather} />}
 
         </div>
 
