@@ -1,0 +1,70 @@
+.title {
+    font-size: 23px;
+    font-weight: 700;
+  }
+
+
+  .weather {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background: linear-gradient(to top, #79bee9, #acd1e7) , url('../../assets/bg.svg') no-repeat top center;
+    margin-top: 15px;
+}
+
+
+.weather-icon {
+    width: 100px;
+}
+
+  
+  .weekly-weather {
+    display: flex;
+    font-size: 14px;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weekly-weather  h6 {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #4581c5;
+  }
+
+  .weekly-weather  p {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+
+  .weekly-weather  span {
+    font-size: 1.125rem;
+    color: #77C000;
+    width: auto;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  
+  .description {
+    cursor: inherit;
+    flex: 1 1;
+    margin-right: 0 auto;
+    text-align: center;
+  }
+  
+  .min-max {
+    color: #757575;
+  }
+  
+  .forecast-display{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+  }
+  
+
+

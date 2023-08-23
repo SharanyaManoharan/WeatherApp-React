@@ -1,0 +1,16 @@
+#image-button{
+    background: url(../../assets/search-icon.svg) no-repeat top left;
+    width: 50px;
+    position: absolute;
+    display: inline-flex;
+    margin-left: 8px;
+    margin-top: -2.2rem;
+    align-items: center;
+    border: none;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.container-custom{
+    margin-top: 1rem !important;
+}
