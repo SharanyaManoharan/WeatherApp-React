@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./current-weather.css";
 
 
@@ -13,24 +13,24 @@ const CurrentWeather = ({ daily }) => {
             </div>
             <div className="flex flex-col items-center w-6/12 float-left mb-10 ">
                 <div className="flex flex-row items-center ">
-                    <p className="temperature mr-4">{daily.main.temp}</p>
+                    <p className="temperature mr-4">{Math.round(daily.main.temp)}°C</p>
                     <img
                         alt="weather"
                         className="weather-icon"
                         src={`icons/${daily.weather[0].icon}.png`}
                     />
                 </div>
-                <p className="weather-description text-lg">{daily.weather[0].description}</p>
+                <p className="weather-description text-2xl">{daily.weather[0].description}</p>
             </div>
 
 
-            <div className="w-6/12  flex flex-col items-center float-right">
+            <div className=" details-container w-6/12  flex flex-col items-center float-right">
                 <div className=" p-8 flex flex-col items-center justify-between">
                     <span className="flex">
                         <div className="parameter-row">
                             <span className="text-xl">Feels like</span>
                             <span className="font-semibold text-xl">
-                                {daily.main.feels_like}°{unit === 'celsius' ? 'C' : 'F'}
+                            {Math.round(daily.main.feels_like)}°C
                             </span>
                         </div>
                         <div className="parameter-row">

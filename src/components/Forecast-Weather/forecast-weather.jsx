@@ -10,7 +10,7 @@ const ForecastWeather = ({ weekly }) => {
     return (
         <div className="weather bg-cyan-100 container mx-auto rounded-lg shadow-md p-12">
             <h3 className="title">Weekly Weather</h3>
-            <div className="forecast-display mt-5">
+            <div className="forecast-display mt-8">
                 {weekly.list.splice(0, 7).map((item, idx) => (
                     <div className="w-7/12" key={idx}>
                        <div className="weekly-weather p-4">

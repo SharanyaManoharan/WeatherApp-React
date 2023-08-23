@@ -25,14 +25,18 @@
 .weather-description {
     font-weight: 500;
     line-height: 1;
-    margin: 0;
-    color: #670CF3;
+    margin: 0 auto;
+    color: #fff;
+    align-items: center;
 }
 
 .weather-icon {
     width: 100%;
 }
 
+.details-container {
+    margin-top: -3rem
+}
 .temperature {
     font-weight: 600;
     font-size: 5rem;
@@ -54,7 +58,7 @@
 }
 
 .parameter-row  span:first-child{
-    color: #EAA21C;
+    color: #eae713;
 }
 
 .parameter-label {

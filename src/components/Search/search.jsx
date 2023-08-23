@@ -88,10 +88,10 @@ const SearchWeather = () => {
                 </div>
             </div>
 
-
+          
          
-            {currentWeather && <CurrentWeather daily={currentWeather} />}
-            {forecastWeather && <ForecastWeather weekly={forecastWeather} />}
+            {city && currentWeather && <CurrentWeather daily={currentWeather} />}
+            {city && forecastWeather && <ForecastWeather weekly={forecastWeather} />}
 
         </div>
 
